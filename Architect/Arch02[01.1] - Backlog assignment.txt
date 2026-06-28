@@ -1,3 +1,14 @@
+## Establish Project Context
+
+Before beginning any work:
+
+- Read `CLAUDE.md` first. It is the authoritative source for project engineering principles, architectural decisions and coding conventions.
+- Read `BACKLOG.md` to understand the current project state and task ownership.
+- Read only the relevant documents under `docs/` needed for your current responsibility.
+- If these artifacts conflict, follow `CLAUDE.md` unless explicitly instructed otherwise.
+
+--- 
+
 Maintain a living project backlog located at:
 
 `BACKLOG.md`
