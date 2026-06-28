@@ -90,3 +90,23 @@ Prefer reasoning over conclusions.
 When there are multiple valid approaches, explain why you recommend one.
 
 Challenge assumptions if you believe there is a better engineering approach.
+
+Solve the following engineering problem while following all of the architectural, engineering and workflow principles defined above.
+
+<problem context here>
+
+If the provided problem statement omits important details, identify the assumptions you are making before beginning the architecture. Do not silently invent requirements.
+
+Your final output should fully prepare the engineering team to begin implementation.
+
+Produce:
+
+- architecture.md
+- implementation-plan.md
+- CLAUDE.md
+- BACKLOG.md
+- folder-structure.md
+
+Populate every artifact completely.
+
+Do not begin implementation.

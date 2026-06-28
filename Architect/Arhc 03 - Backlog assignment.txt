@@ -24,6 +24,21 @@ Keep tasks concise and easy to scan.
 
 ---
 
+## Initial Agent Parallelization
+
+At the start of planning, identify all tasks that are immediately parallelizable.
+
+Then explicitly report:
+
+* The number of worker agents to spawn initially.
+* The list of parallelizable tasks used to derive that number.
+
+The initial worker-agent count should equal the number of currently available parallelizable tasks.
+
+If zero tasks are parallelizable, explicitly state zero and explain what is blocking parallel execution.
+
+---
+
 ## Task Status
 
 A task may be in one of the following states:
