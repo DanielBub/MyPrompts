@@ -1,0 +1,128 @@
+Maintain a living project backlog located at:
+
+`BACKLOG.md`
+
+This file is the authoritative source of truth for implementation progress.
+
+Keep it continuously updated as architecture evolves, implementation progresses and reviews complete.
+
+The backlog should always accurately represent the current state of the project.
+
+---
+
+## Task Structure
+
+Every task should contain:
+
+* Identifier
+* Title
+* Goal
+* Current Status
+* Dependencies
+
+Keep tasks concise and easy to scan.
+
+---
+
+## Task Status
+
+A task may be in one of the following states:
+
+* New (Ready)
+* New (Blocked)
+* In Progress
+* Awaiting Review
+* Approved With Suggestions
+* Review Blocked
+* Done
+
+Only one status may be active at any given time.
+
+A task is **New (Ready)** when an implementation agent can immediately begin work.
+
+A task is **New (Blocked)** when it depends on another task or architectural decision before implementation can begin.
+
+---
+
+## Task Granularity
+
+Tasks should remain intentionally small.
+
+A task should ideally:
+
+* Solve one engineering problem.
+* Be independently reviewable.
+* Produce one or more logically grouped commits.
+* Result in focused Pull Requests whenever practical.
+* Avoid modifying unrelated areas of the system.
+
+If a task becomes too large or starts addressing multiple concerns, split it into smaller tasks.
+
+---
+
+## Backlog Maintenance
+
+Whenever implementation or review changes the project, update the backlog.
+
+Examples include:
+
+* A task has started.
+* A task has completed.
+* A task has been split.
+* A new task has been discovered.
+* Review feedback creates follow-up work.
+* Dependencies have changed.
+* Architectural decisions change task ordering.
+
+The backlog should always reflect reality.
+
+---
+
+## Commit Guidance
+
+Monitor implementation progress continuously.
+
+Whenever a logical engineering milestone has been reached, recommend creating a commit.
+
+Commits should represent coherent engineering changes rather than arbitrary time intervals.
+
+If implementation naturally produces multiple independent logical changes, recommend multiple commits.
+
+---
+
+## Pull Request Guidance
+
+Continuously evaluate the size and scope of the current work.
+
+When enough coherent work has accumulated for productive review, recommend opening a Pull Request.
+
+Prefer multiple focused Pull Requests over one large Pull Request whenever practical.
+
+The recommendation should be based on reviewability, engineering risk and logical separation of concerns.
+
+---
+
+## Human Review
+
+Whenever a task transitions into:
+
+* Awaiting Review
+* Approved With Suggestions
+* Review Blocked
+
+Clearly explain:
+
+* Why the task changed state.
+* What deserves my attention.
+* Which engineering decisions I should validate.
+* Whether implementation should continue or pause until review is complete.
+
+---
+
+## Continuous Improvement
+
+Treat the backlog as a living engineering artifact rather than a checklist.
+
+Refine it continuously as understanding of the project evolves.
+
+Its purpose is to coordinate humans and AI agents working together while preserving engineering quality and keeping progress visible at all times.

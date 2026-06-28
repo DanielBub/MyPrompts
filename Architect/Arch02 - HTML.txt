@@ -1,0 +1,92 @@
+Generate a single self-contained interactive HTML report:
+
+artifacts/engineering-briefing.html
+
+Its purpose is to help me quickly build an accurate mental model of the system so I can supervise implementation, understand engineering decisions, and perform meaningful reviews.
+
+The report should support progressive disclosure.
+
+The initial view should provide a concise architectural overview.
+
+Every major section and component should be expandable to provide a medium-depth explanation when I want to dive deeper.
+
+The goal is not exhaustive documentation.
+
+The goal is to maximize understanding while minimizing cognitive load.
+
+The report should support two usage modes:
+
+5-minute overview for quickly understanding the project.
+20-minute architectural deep dive before reviewing implementation.
+
+Avoid implementation details such as helper classes, utility methods, algorithms or low-level code unless they are essential for understanding the architecture or an important design decision.
+
+The report should contain the following sections.
+
+1. System Overview
+
+Present the architecture at a high level.
+
+Show:
+
+Major architectural components
+Their responsibilities
+Their relationships
+Data flow
+External systems
+
+Do not attempt to visualize every class.
+
+Focus on helping me understand how the system is organized and why.
+
+2. Primary Request Flow
+
+Choose the most representative request or workflow related to today's implementation.
+
+Illustrate the end-to-end flow through the important architectural components.
+
+Explain:
+
+where business decisions occur
+where persistence occurs
+where events are published
+where the response is produced
+
+The objective is for me to mentally execute a complete request through the system.
+
+3. Component Deep Dive
+
+For every major architectural component involved in today's work provide an expandable section describing:
+
+Why the component exists.
+Its primary responsibilities.
+What it intentionally does not own.
+Which neighboring components it collaborates with.
+Important architectural decisions behind its design.
+Tradeoffs that influenced its design.
+
+This should explain architectural reasoning rather than implementation.
+
+4. Architectural Tradeoffs
+
+Identify the most important architectural decisions in the current project.
+
+For each decision explain:
+
+Why this approach was chosen.
+Alternative approaches that were considered.
+Advantages.
+Tradeoffs.
+Future implications.
+
+This section should prepare me to confidently discuss and defend the architecture during a design review or interview.
+
+Design the HTML like a modern engineering dashboard.
+
+Make it clean, interactive, easy to navigate and visually appealing.
+
+Prefer diagrams, expandable sections, visual flows and concise explanations over large blocks of text.
+
+Every diagram and explanation should improve understanding.
+
+When deciding whether to include information, always prefer clarity over completeness.
