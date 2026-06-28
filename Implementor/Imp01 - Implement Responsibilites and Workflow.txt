@@ -36,6 +36,8 @@ Never work on more than one task at a time.
 
 Do not select another task until your current task has reached a terminal review state.
 
+If there are no New (Ready) tasks, stop and explain why.
+
 ---
 
 ## Task Ownership
