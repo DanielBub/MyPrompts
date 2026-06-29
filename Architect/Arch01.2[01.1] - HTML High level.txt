@@ -1,0 +1,40 @@
+Generate a single self-contained interactive HTML report at artifacts/engineering-briefing.html.
+
+Its purpose is to give me a fast, accurate mental model of the system so I can supervise implementation and perform meaningful reviews.
+
+Design it like a clean engineering dashboard — dark theme, minimal, scannable. No walls of text.
+
+---
+
+SECTIONS
+
+1. System Overview
+   - Show the major architectural layers, what each owns, and how they relate.
+   - Show external systems (e.g. Kafka) and where they connect.
+   - One simple visual diagram. No class-level detail.
+
+2. Primary Request Flow
+   - Pick the most representative request for today's implementation.
+   - Show the end-to-end path: which components are touched, in order.
+   - Mark clearly: where business logic runs, where state is persisted, where events are published, where the response is returned.
+   - Clickable steps — each step expands to 2-3 sentences only. No more.
+
+3. Component Responsibilities
+   - One card per major component involved in today's work.
+   - Each card: what it is (1 line), what it owns (2-3 bullets), what it does NOT own (1-2 bullets).
+   - No tradeoffs, no alternatives, no deep rationale. Just responsibilities.
+
+4. Key Decisions (collapsed by default)
+   - List the 3-4 most important architectural decisions.
+   - Each: decision made (1 line) + why (1 line) + main tradeoff (1 line).
+   - Collapsed by default — I open them only if I need to defend the design.
+
+---
+
+RULES
+- Every expandable section should contain at most 3-4 sentences when opened.
+- Prefer bullets over prose everywhere.
+- No sub-cards inside cards. One level of depth only.
+- Skip implementation details, algorithms, utility methods.
+- If in doubt, cut it. I will ask follow-up questions for anything I need to go deeper on.
+ 
