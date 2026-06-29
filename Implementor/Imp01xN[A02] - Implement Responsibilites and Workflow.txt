@@ -90,6 +90,73 @@ If a task cannot reasonably be unit tested, briefly explain why and suggest the 
 
 ---
 
+## Commit Discipline
+
+All commits must follow strict scope and clarity rules.
+
+### Scope Rules
+
+Each commit must:
+
+* Contain **only changes required for the current task**
+* Exclude unrelated refactors, fixes, or cleanup
+* Avoid bundling multiple backlog tasks into a single commit
+* Preserve clear mapping between backlog task → implementation → commit
+
+If unrelated improvements are discovered during implementation:
+
+* Do **not** include them in the current commit
+* Instead, add them to `BACKLOG.md` as separate follow-up tasks
+
+---
+
+### Commit Message Rules
+
+Commit messages must be:
+
+* Clear
+* Descriptive
+* Self-contained
+* Reflect the actual engineering change
+
+They must describe **what changed and why**, not task metadata.
+
+#### Good examples:
+
+* `Add user authentication middleware with JWT validation`
+* `Refactor payment service to improve error handling consistency`
+* `Implement caching layer for product lookup endpoint`
+* `Fix race condition in order processing workflow`
+
+#### Bad examples:
+
+* `Task 4 done`
+* `Fixes`
+* `WIP`
+* `Multiple tasks completed`
+* `Update code`
+
+---
+
+### Single-Responsibility Commits
+
+A commit should represent a **coherent engineering change**, such as:
+
+* A feature increment
+* A refactor step
+* A bug fix
+* A test addition for a specific behavior
+
+Avoid “bulk completion” commits that combine unrelated logic.
+
+---
+
+### Final Rule
+
+If a commit message would require referencing multiple backlog items to make sense, it is too broad and must be split.
+
+---
+
 ## Task Completion
 
 When implementation is complete:
