@@ -1,0 +1,69 @@
+Generate a single self-contained interactive HTML file at:
+
+`artifacts/backlog-topology.html`
+
+Purpose: provide a quick, skimmable topology view of `BACKLOG.md` task relationships (required, blocking, dependency edges).
+
+Agents still communicate and coordinate through `BACKLOG.md`; this HTML is a companion visualization only.
+
+---
+
+## Inputs
+
+Read:
+
+* `BACKLOG.md`
+
+Infer task nodes and edges from dependency information already present in the backlog.
+
+---
+
+## Output Requirements
+
+Create a tidy, readable, visually clean HTML dashboard focused on skimming.
+
+Include:
+
+1. Topology graph
+   - Directed graph of tasks and dependency edges.
+   - Clear visual distinction between statuses (New (Ready), New (Blocked), In Progress, Awaiting Review, Approved With Suggestions, Review Blocked, Done).
+   - Arrow direction must make dependency flow obvious.
+
+2. Compact summary strip
+   - Total tasks.
+   - Count per status.
+   - Number of currently unblocked New (Ready) tasks.
+
+3. Quick blockers panel
+   - List blocked tasks and exactly which dependency is blocking each.
+   - Keep each line short and scannable.
+
+4. Ready-now panel
+   - List all New (Ready) tasks in priority order if available; otherwise preserve backlog order.
+
+---
+
+## Design Constraints
+
+* Keep layout clean and compact with strong visual hierarchy.
+* Prioritize legibility over decoration.
+* Avoid large paragraphs; use short labels and concise bullets.
+* Keep interactions minimal and useful (hover highlight, optional filter by status).
+
+---
+
+## Data Fidelity Rules
+
+* Do not invent tasks or dependencies.
+* If a dependency is ambiguous, mark it as "Unresolved dependency reference" in a visible warnings area.
+* If no dependency data exists, render an empty-state message and still show status counts.
+
+---
+
+## Git Hygiene
+
+This file is generated output and must be git-ignored.
+
+If needed, add the path below to `.gitignore`:
+
+`artifacts/backlog-topology.html`

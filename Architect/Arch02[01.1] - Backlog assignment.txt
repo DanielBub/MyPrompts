@@ -19,6 +19,12 @@ Keep it continuously updated as architecture evolves, implementation progresses 
 
 The backlog should always accurately represent the current state of the project.
 
+Backlog topology visualization is handled by a separate follow-up prompt:
+
+`Architect/Arch02.1[02] - Backlog topology HTML follow-up.txt`
+
+Do not embed topology visualization instructions here.
+
 ---
 
 ## Task Structure
