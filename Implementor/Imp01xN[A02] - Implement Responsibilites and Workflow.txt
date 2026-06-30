@@ -172,6 +172,12 @@ Provide:
 * Any follow-up tasks discovered.
 * Any backlog updates that should be performed.
 
+After the task is reviewed and reaches its terminal approved state (for example, moved to Done), proactively unblock downstream work:
+
+* Re-check dependent tasks in `BACKLOG.md`.
+* For each task whose dependencies are now fully satisfied, change status from **New (Blocked)** to **New (Ready)**.
+* Keep newly unblocked tasks concise and visible so another implementor can immediately claim them.
+
 Then stop.
 
 Do not begin another task.

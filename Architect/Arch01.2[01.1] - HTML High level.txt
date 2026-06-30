@@ -3,6 +3,7 @@ Generate a single self-contained interactive HTML report at artifacts/engineerin
 Its purpose is to give me a fast, accurate mental model of the system so I can supervise implementation and perform meaningful reviews.
 
 Design it like a clean engineering dashboard — dark theme, minimal, scannable. No walls of text.
+Make it clearly graphical and highly skimmable: prioritize visuals, compact hierarchy, and strong visual emphasis of what each suggested change/problem fix will do.
 
 ---
 
