@@ -148,3 +148,5 @@ Do **not** begin implementation.
 Solve the following engineering problem while following all of the architectural, engineering, and workflow principles defined above.
 
 <problem context here>
+
+You're welcome to suggest a feature branch name given the workspace's common naming patterns.

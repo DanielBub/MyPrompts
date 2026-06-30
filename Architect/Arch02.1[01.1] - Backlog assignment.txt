@@ -47,6 +47,7 @@ Then explicitly report:
 The initial worker-agent count should equal the number of currently available parallelizable tasks.
 
 If zero tasks are parallelizable, explicitly state zero and explain what is blocking parallel execution.
+You're welcome to suggest worktree names and amount to fit the parallelization level of the solution.
 
 ---
 
