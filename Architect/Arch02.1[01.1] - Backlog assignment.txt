@@ -15,15 +15,9 @@ Maintain a living project backlog located at:
 
 This file is the authoritative source of truth for implementation progress.
 
-Keep it continuously updated as architecture evolves, implementation progresses and reviews complete.
-
 The backlog should always accurately represent the current state of the project.
 
-Backlog topology visualization is handled by a separate follow-up prompt:
-
-`Architect/Arch02.1[02] - Backlog topology HTML follow-up.txt`
-
-Do not embed topology visualization instructions here.
+It must be learn and claim firendly for agents to take tasks and update on task onwership.
 
 ---
 
